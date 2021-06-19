@@ -1,0 +1,94 @@
+
+  .hero{
+    font-family: Mark-Book;
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .robot{
+    position: absolute;
+    bottom: 27.88%;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 20%;
+  }
+  .hero__bottom{
+    padding: 5rem;
+    justify-content: center;
+    display: flex;
+    
+  }
+  .hero__left{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+  }
+  .hero__right{
+    position: absolute;
+    bottom: -9%;
+    right: 0%;
+  }
+  .hero__header{
+    text-shadow: 1px 1px 2px rgb(44, 44, 44);
+    margin-bottom: 155px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero__header > h2{
+    font-size: 62px;
+  }
+  .hero__header > h3{
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .hero__header > h4{
+    font-size: 28px;
+    color: rgb(41, 231, 214);
+  }
+  .tutorial1{
+    height: 42.1vh;
+    background-color: rgb(32, 32, 32);
+  }
+  .butao_container{
+    padding: 10.2rem;
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    text-decoration: none;
+  }
+  .butao_container > h4{
+    text-decoration: none;
+  }
+  
+  .kuka__button{
+    font-size: 28px;
+    color: rgb(41, 231, 214);
+    border: 1px solid black;
+    margin-right: 100px;
+    background-image: linear-gradient(to right, rgb(41, 231, 214) , rgb(0, 167, 153));
+    color: #fff;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  .standford__button{
+    font-size: 28px;
+    color: rgb(41, 231, 214);
+    border: 1px solid black;
+    margin-right: 100px;
+    background-image: linear-gradient(to right, rgb(41, 231, 214) , rgb(0, 167, 153));
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+  }
+  

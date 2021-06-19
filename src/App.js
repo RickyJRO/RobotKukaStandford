@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import kuka from './assets/kuka.png'
+import Standford from './assets/standford.png'
 import './App.css';
-
+import robot from './assets/robot.png'
+import {motion, AnimatePresence} from 'framer-motion'
+import React, {useState} from 'react';
+import {Link, Route, Switch, useLocation} from 'react-router-dom';
+import Home from './components/Home'
+import Kuka from './components/Kuka';
+import Standfordd from './components/Standford'
 function App() {
+
+  const location = useLocation();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/Kuka">
+          <Kuka />
+        </Route>
+        <Route path="/Standford">
+          <Standfordd />
+        </Route>
+      </Switch>
+    </AnimatePresence>
+   
+    </>
   );
 }
 
