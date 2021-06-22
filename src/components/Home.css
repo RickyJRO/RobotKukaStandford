@@ -6,15 +6,20 @@
     display: flex;
     flex-direction: column;
     overflow: hidden;
+   
+  }
+  .robotcontainer{
+    position: relative;
+   height: 20vh;
+   z-index: 3;
   }
   .robot{
     position: absolute;
-    bottom: 27.88%;
-    z-index: 4;
+    bottom:0;
     left: 0;
     right: 0;
     margin: auto;
-    width: 20%;
+    width: 13%;
   }
   .hero__bottom{
     padding: 5rem;
@@ -24,17 +29,16 @@
   }
   .hero__left{
     position: absolute;
-    bottom: 0%;
+    bottom: 35%;
     left: 0%;
   }
   .hero__right{
     position: absolute;
-    bottom: -9%;
+    bottom: 18%;
     right: 0%;
   }
   .hero__header{
     text-shadow: 1px 1px 2px rgb(44, 44, 44);
-    margin-bottom: 155px;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -52,11 +56,11 @@
     color: rgb(41, 231, 214);
   }
   .tutorial1{
-    height: 42.1vh;
+    position: relative;
     background-color: rgb(32, 32, 32);
   }
   .butao_container{
-    padding: 10.2rem;
+    padding: 3.2rem;
     display: flex;
     flex: 1;
     justify-content: space-around;
@@ -69,6 +73,7 @@
   .kuka__button{
     font-size: 28px;
     color: rgb(41, 231, 214);
+    outline: none;
     border: 1px solid black;
     margin-right: 100px;
     background-image: linear-gradient(to right, rgb(41, 231, 214) , rgb(0, 167, 153));
@@ -81,6 +86,7 @@
     text-decoration: none;
   }
   .standford__button{
+    outline: none;
     font-size: 28px;
     color: rgb(41, 231, 214);
     border: 1px solid black;

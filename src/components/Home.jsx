@@ -16,6 +16,7 @@ export default function Home() {
              <div className="hero">
                 <div className="hero__header">
                 <h2>Projeto de<span style={{color:"rgb(41, 231, 214)"}}> Robótica</span></h2>
+                <h4>Trabalho realizado</h4>
                 <h3>Ricardo Oliveira, Filipe Mota, João Cristo, Miguel Silva, Guilherme Oliveira</h3>  
                 </div>
                 <div className="hero__bottom">
@@ -42,9 +43,13 @@ export default function Home() {
                 src={Standford} className="robot__standford" />
                 </motion.div>
                 </div>
-                </div>
+                
+                
+                <div className="robotcontainer">
                 <motion.img initial={{opacity:0,y:-100}} animate={{opacity:1,y:0}} transition={{duration:0.5,delay:0.5}} src={robot} className="robot" />
+                </div>
                 <div className="tutorial1">
+                
                 <div className="butao_container">
                 <Link to="Kuka">
                 <motion.button
@@ -59,6 +64,7 @@ export default function Home() {
                 className="standford__button">Robot Standford</motion.button>   
                 </Link>
                 </div>
+            </div>
             </div>
         </motion.div>
     )
